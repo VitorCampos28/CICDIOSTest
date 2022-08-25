@@ -49,16 +49,24 @@
                                     <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LTd-Le-vfx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-x1-0Ue">
+                                <rect key="frame" x="20" y="375" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="N9f-x1-0Ue" firstAttribute="top" secondItem="fpX-mj-vaX" secondAttribute="bottom" constant="20" id="2uX-1v-QnQ"/>
                             <constraint firstItem="WsT-XI-gLb" firstAttribute="top" secondItem="IhJ-Bf-FTr" secondAttribute="bottom" constant="20" id="3LS-df-S6b"/>
                             <constraint firstItem="GOC-jj-1D3" firstAttribute="top" secondItem="WsT-XI-gLb" secondAttribute="bottom" constant="20" id="3is-Wl-mTE"/>
                             <constraint firstItem="fpX-mj-vaX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Tg-hk-TX7"/>
                             <constraint firstItem="WsT-XI-gLb" firstAttribute="trailing" secondItem="zzF-d4-B4H" secondAttribute="trailing" id="DGR-7m-UtA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fpX-mj-vaX" secondAttribute="trailing" constant="20" id="EO9-Ct-isW"/>
                             <constraint firstItem="GOC-jj-1D3" firstAttribute="trailing" secondItem="zzF-d4-B4H" secondAttribute="trailing" id="FDE-mV-I51"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N9f-x1-0Ue" secondAttribute="trailing" constant="20" id="IeI-bj-b4o"/>
                             <constraint firstItem="tv1-Ru-SbG" firstAttribute="trailing" secondItem="zzF-d4-B4H" secondAttribute="trailing" id="JhD-pK-xMR"/>
                             <constraint firstItem="tv1-Ru-SbG" firstAttribute="top" secondItem="GOC-jj-1D3" secondAttribute="bottom" constant="20" id="NWP-MJ-woV"/>
                             <constraint firstItem="zzF-d4-B4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ObM-Gk-2e0"/>
@@ -70,6 +78,7 @@
                             <constraint firstItem="IhJ-Bf-FTr" firstAttribute="top" secondItem="zzF-d4-B4H" secondAttribute="bottom" constant="20" id="dn6-d7-Zyd"/>
                             <constraint firstItem="IhJ-Bf-FTr" firstAttribute="leading" secondItem="zzF-d4-B4H" secondAttribute="leading" id="fot-ik-yqw"/>
                             <constraint firstItem="fpX-mj-vaX" firstAttribute="top" secondItem="tv1-Ru-SbG" secondAttribute="bottom" constant="20" id="nDH-1b-eXP"/>
+                            <constraint firstItem="N9f-x1-0Ue" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="thP-Mu-ewF"/>
                             <constraint firstItem="GOC-jj-1D3" firstAttribute="leading" secondItem="zzF-d4-B4H" secondAttribute="leading" id="zoW-YD-5rp"/>
                         </constraints>
                     </view>
@@ -78,6 +87,7 @@
                         <outlet property="fifthField" destination="tv1-Ru-SbG" id="eA1-54-IeC"/>
                         <outlet property="firstField" destination="zzF-d4-B4H" id="IIE-bb-YpC"/>
                         <outlet property="fourthField" destination="GOC-jj-1D3" id="DYm-NC-m6o"/>
+                        <outlet property="resultLabel" destination="N9f-x1-0Ue" id="EXB-pB-WYW"/>
                         <outlet property="secondField" destination="IhJ-Bf-FTr" id="RPo-o3-j9o"/>
                         <outlet property="thirdField" destination="WsT-XI-gLb" id="Ikq-Jt-azC"/>
                     </connections>
