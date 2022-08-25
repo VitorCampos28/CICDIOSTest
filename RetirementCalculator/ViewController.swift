@@ -38,7 +38,10 @@ class ViewController: UIViewController {
         guard let planned_retirement_age = Int(thirdField.text!) else { return }
         guard let average_interest_rate = Int(fourthField.text!)  else { return }
         guard let currentSavings = Int(fifthField.text!) else { return }
-        resultLabel.text = "If you save $\(monthlyInvestmint) every month for \(planned_retirement_age - currentAge) years, and invest that money plus your current investment of \(currentSavings) at a \(average_interest_rate)% anual interest rate, you will have X by th time you are \(planned_retirement_age)"
+        
+        let retirement_amount = 100
+        
+        resultLabel.text = "If you save $\(monthlyInvestmint) every month for \(planned_retirement_age - currentAge) years, and invest that money plus your current investment of \(currentSavings) at a \(average_interest_rate)% anual interest rate, you will have \(retirement_amount) by th time you are \(planned_retirement_age)"
         
         let properties = ["current_age" : String(currentAge), "planned_retirement_age" : String(planned_retirement_age)]
         
